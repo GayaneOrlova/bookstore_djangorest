@@ -22,4 +22,5 @@ from books import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('get_books/', BookListAPIView.as_view()),
+
 ]

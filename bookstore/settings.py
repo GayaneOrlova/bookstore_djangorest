@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+CART_SESSION_ID = 'cart' #ключ для хранения корзины в сессии пользователя.
 # Application definition
 
 INSTALLED_APPS = [
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'books.apps.BooksConfig',
+    'cart.apps.CartConfig',
 ]
 
 MIDDLEWARE = [
